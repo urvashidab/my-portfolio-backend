@@ -31,6 +31,10 @@ connectDB();
 
 app.use("/api", router);
 
+app.get("/", (req, res) => {
+  res.send("Backend is running successfully!");
+});
+
 // initialize server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
