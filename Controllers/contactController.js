@@ -76,7 +76,7 @@ export const contactUser = async (req, res) => {
 
     // send email
 
-    await transporter.sendMail(mailoptions);
+    // await transporter.sendMail(mailoptions);
 
     res.status(200).json({
       success: true,
